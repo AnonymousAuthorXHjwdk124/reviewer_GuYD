@@ -94,7 +94,8 @@
         <h3>Table of Contents</h3>
         <ul>
           <li><a href="#Images_container_challenges">W: Addressing Challenges in Manipulation - Multiresolution Format of Quantized Tensor Train</a></li>
-          <li><a href="#Images_container_stability">Q2: PuTT's Influence on Training Stability</a></li>
+          <li><a href="#Images_container_stability">Q2.1: PuTT's Influence on Training Stability</a></li>
+          <li><a href="#Images_container_2d3d">Q2.2: 2D and 3D Compression Experiments with Error Bars</a></li>
         </ul>
       </div>
     </div>
@@ -123,7 +124,7 @@
 
   <section id="Images_container_stability" style="margin-top: 20px;"> <!-- Add margin-top and margin-bottom styles -->
     <div class="container is-max-desktop">
-      <h1 style="margin-bottom: 20px; font-weight: bold;  font-size: 28px;">Q2: PuTT's Influence on Training Stability</h1> <!-- Add font-weight: bold; to make the headline bold -->
+      <h1 style="margin-bottom: 20px; font-weight: bold;  font-size: 28px;">Q2.1: PuTT's Influence on Training Stability</h1> <!-- Add font-weight: bold; to make the headline bold -->
       <h2 style="font-weight: bold; font-size: 20px;">PuTT vs QTT Without Upsampling Ablation Experiment for 4K Images</h2>
       <div class="columns is-centered"> <!-- Center the columns -->
         <div class="column is-half"> <!-- Limit the width of the column -->
@@ -141,6 +142,44 @@
     </div>
   </section>
 
+  <section id="Images_container_2d3d" style="margin-top: 20px; margin-bottom: 100px;">
+    <div class="container is-max-desktop">
+      <h1 style="margin-bottom: 20px; font-weight: bold; font-size: 28px;">Q2.2: 2D and 3D Compression Experiments with Error Bars</h1>
+  
+      <div class="columns is-centered">
+        <div class="container_smallest" style="margin-top: 20px;">
+          <h2 style="font-weight: bold; font-size: 20px;">2D Compression PSNR vs Iterations</h2>
+          <p>PSNR (y-axis) vs compression ratio (x-axis) for 2D fitting. “up = upsampling” and TT No-Up is the QTT model without upsampling. Error bars show ±1 standard deviation interval.</p>
+          <img src="static/images/2dpsnr.png" alt="Image 1">
+        </div>
+      </div>
+  
+      <div class="columns is-centered">
+        <div class="container_smallest" style="margin-top: 20px;">
+          <h2 style="font-weight: bold; font-size: 20px;">2D Compression SSIM vs Iterations</h2>
+          <p>SSIM (y-axis) vs compression ratio (x-axis) for 2D fitting. “up = upsampling” and TT No-Up is the QTT model without upsampling. Error bars show ±1 standard deviation interval.</p>
+          <img src="static/images/2dssim.png" alt="Image 2">
+        </div>
+      </div>
+      
+      <div class="columns is-centered">
+        <div class="container_smallest" style="margin-top: 20px;">
+          <h2 style="font-weight: bold; font-size: 20px;">3D Compression PSNR vs Iterations</h2>
+          <p>PSNR (y-axis) vs compression ratio (x-axis) for 3D fitting. “up = upsampling” and TT No-Up is the QTT model without upsampling. Error bars show ±1 standard deviation interval.</p>
+          <img src="static/images/3dpsnr.png" alt="Image 3">
+        </div>
+      </div>
+      
+      <div class="columns is-centered">
+        <div class="container_smallest" style="margin-top: 20px;">
+          <h2 style="font-weight: bold; font-size: 20px;">3D Compression SSIM vs Iterations</h2>
+          <p>SSIM (y-axis) vs compression ratio (x-axis) for 3D fitting. “up = upsampling” and TT No-Up is the QTT model without upsampling. Error bars show ±1 standard deviation interval.</p>
+          <img src="static/images/3dssim.png" alt="Image 4">
+        </div>
+      </div>
+    </div>
+  </section>
+  
   
   <section>
     <div class="container is-max-desktop">
